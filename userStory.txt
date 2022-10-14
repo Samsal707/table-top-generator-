@@ -1,0 +1,21 @@
+The Landing Page
+      Will have a title 
+         - H1 element 
+         - with the following text content "Welcome to the home of table top games"
+
+         - they will section elements 
+              - each Section will display text and images describing the games that are available to play.
+
+      Log in Button To allow a user to go into their unique account 
+
+      Will allow access to a user’s account.
+      They will be able to log using their unique credentials
+      On logging on display
+      Last visit date
+      Last games played 
+      The related tallied 
+      Awards if any
+      Options of games to play and be able to select from these
+      Co-players or followers or gamers who are followed
+      Tournaments 
+      Allow the user to continue a previous game or start a new game 
