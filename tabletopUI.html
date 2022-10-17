@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Top generators</title>
+        <link rel = "stylesheet" href = "tableTopUI.css">
+
+    </head>
+    <body>
+        <h1 class = "site">Random Dice Generator</h1>
+        <form name = "randomForm">
+            <label for = "faces">Number of faces:</label>
+            <div>
+                <input type = "number" id = "faces" name = "faces">
+                <input type = "button" value="ROLL!" onclick="randomDice()">
+            </div>
+            <label for="rolls">You Rolled:</label>
+            <div>
+               <input type = "text" id = "rolls" name = "rolls" value = "">
+            </div>
+            
+        
+
+            <h3>You Ledger Board</h3>
+            <table id = "ledger">
+            <th>#Roll</th>
+            <th>#Face</th>
+            <th>#Roll</th>
+            </table>
+        </form>
+
+        <script>
+            let table = document.getElementById("ledger");
+            let numFaces = document.getElementById("faces").value;
+            let tableRow = table.row[0];
+            let td = tableRow.cell[0];
+            let td1 = tableRow.cell[1];
+            let td2 = tableRow.cell[2];
+            let innerHTML = tableRow + td + td1 + td2;
+
+            function randomDice(){
+
+                // let dice = document.body.randomForm;
+
+                // let table = dice.ledger;
+
+                let outputHTML = "<table>";
+                document.write(outputHTML);
+            
+                for (i = 0; i <= 10; i++){
+                    tableRow = table.row[i];
+                    td = tableRow.cell[i] = "tick";
+                    td1 = tableRow.cell[i] = "vic";
+                    td2 = tableRow.cell[i] = "even";
+                    innerHTML += (tableRow + td + td1 + td2)
+                    
+                };
+            
+                 document.write(innerHTML);
+
+            }
+    
+            
+                    
+        </script>
+            
+    </body>
+
+</html>

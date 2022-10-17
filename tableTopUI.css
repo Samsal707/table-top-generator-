@@ -1,0 +1,12 @@
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(214, 175, 67);
+    padding-left: 100px;
+}
+
+div{
+    padding-bottom: 40px;
+}
